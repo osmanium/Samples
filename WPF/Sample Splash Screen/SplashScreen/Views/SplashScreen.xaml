@@ -1,0 +1,17 @@
+﻿<Window x:Class="SplashScreen.Views.SplashScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True"
+            xmlns:Behaviours="clr-namespace:SplashScreen.Behaviours"
+            xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+            Behaviours:SplashScreenBehaviour.Enabled="True"
+            WindowStartupLocation="CenterScreen" WindowStyle="None" ShowInTaskbar="False"
+            Topmost="True" AllowsTransparency="True" SizeToContent="Manual"
+            Title="SplashScreen" Height="250" Width="500" SnapsToDevicePixels="True"
+            WindowState="Normal" ResizeMode="NoResize" Background="#FF2F7EA0">
+    <Grid>
+        <TextBlock  HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" 
+                    Text="{Binding Status}" Foreground="White" Margin="10" FontSize="14"/>
+    </Grid>
+</Window>
