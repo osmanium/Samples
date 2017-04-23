@@ -16,7 +16,7 @@ namespace AppDomainSample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Mail started in : " + AppDomain.CurrentDomain.FriendlyName);
+            Console.WriteLine("Main started in : " + AppDomain.CurrentDomain.FriendlyName);
 
             foreach (string pluginDirectory in Directory.GetDirectories("Plugins"))
             {
