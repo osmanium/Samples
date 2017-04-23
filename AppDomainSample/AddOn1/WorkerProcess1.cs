@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AddOn1_Plugin
 {
-    public class WorkerProcess1 : PluginExecuter, IWorkerProcess
+    public class WorkerProcess1 : IWorkerProcess
     {
         private static readonly Dictionary<int, MyCachedObject> myCache = new Dictionary<int, MyCachedObject>();
         public string ProcessRequest(int id)
